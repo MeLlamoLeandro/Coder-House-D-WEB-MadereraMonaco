@@ -1,0 +1,679 @@
+/*---------------------------------MAQUETADO RESPONSIVE CON BOOTSTRAP---------------------------------*/
+/*("./index.html)
+/*("./pages/nosotros.html)
+*/
+.row , .container{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:Museo;
+    src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf);
+}
+html , body{
+    overflow-x: hidden;
+}
+.font{
+    font-family:"Museo",serif;
+}
+.colorWhite{
+    color: white;
+}
+.colorBlack{
+    color: black;
+}
+.colorPrimario{
+    color: rgb(182, 61, 50);
+}
+.backPrimario{
+    background-color: rgb(182, 61, 50);
+}
+.backSecundario{
+    background-color: rgb(60,29,23);
+}
+.backFondo{
+    background-color: rgb(239, 239, 239);   
+}
+.headerInicio{
+    background-image: url(../img/maderas_apiladas.jpg);
+     height: 200px;
+}
+.logoNavbar{
+    width:130px;
+    height:80px
+}
+.logoFooter{
+    width: 89px ;   
+}
+.fa-square-facebook ,.fa-square-instagram , .fa-square-twitter{
+    font-size: 50px; 
+}
+.fa-whatsapp{
+    font-size: 65px; 
+}
+.widthSlider{
+    width: 100vw;
+}
+.shadowImg{
+    box-shadow: 6px 9px 15px -2px rgba(0,0,0,0.54);
+}
+/*---------------------------------MAQUETADO CON GRID Y FLEXBOX ---------------------------------*/
+/*("./pages/productos.html)
+/*("./pages/contacto.html)
+/*("./pages/comprar.html)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+@font-face {
+    font-family:Museo;
+    src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf);
+}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header	 header	    header	   header"
+                         "nav	     nav	    nav	       nav"
+                         "main	     main	    main	   main"
+                         "footer	 footer	    footer     footer"
+                         
+}
+/* --------------- Configuracion del Header  ---------------*/
+.header{   
+    grid-area: header;
+    padding: 8px;
+}
+.logoHeader{
+    margin: 20px 10px;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+}
+/*--------------- Configuracion del NAVEGADOR maquetado GRID ---------------*/
+nav{
+    grid-area: nav;
+}
+/*--------------- Configuracion general maquetado GRID --------------- */
+.main{
+    grid-area: main;
+}
+.main  h1{
+    margin: 10px;
+    padding: 10px;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(182, 61, 50);
+}
+/*parrafo del main*/
+.main p{
+    margin: 20px ;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold
+}
+.main h2{
+    margin: 10px;
+    padding: 10px;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    color:black ;
+}
+.main h3{
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:black ;
+}
+/* --------------- configuracion del Footer sin Bootsrap --------------- */
+.footer{
+    grid-area: footer;
+}
+.footerArriba , .footerAbajo{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 108px;
+}
+.footerArriba p{
+    margin: 4px ;
+    padding: 24px;   
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; 
+    max-width: 480px;  
+}
+.footerArriba  >.whatsappPresupuesto{
+  text-align: center;
+}
+.footerAbajo p{
+    margin: 0px;
+    padding: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter; 
+}
+.logoSinBSFooter{
+    margin: 0px;
+    padding: 0px;
+    width: 89px ;
+    height:54px;
+}
+.fa-square-facebook ,.fa-square-instagram , .fa-square-twitter{
+    margin: 10px;
+    color: white;
+    font-size: 50px; 
+}
+.fa-whatsapp{
+    margin: 10px;
+    color: white;
+    font-size: 65px; 
+}
+ /* --------------- Detalles pagina -Productos- maquetado GRID ---------------*/
+.productoTarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+}
+.productoTarjeta h3{
+    text-align: left;
+    height: 60px;
+}
+.productoImagen{
+    display: inline-block;
+    width: 576px;
+    height: 356px;
+}
+.listaEspecial{
+    display:block;
+    margin: 20px;
+    padding: 25px;
+    border: 5px;
+    font-size:22px;
+}
+.listaEspecial ul{
+    margin: 10px;
+}
+.listaEspecial ul li{
+    list-style-type: none;
+    margin: 5px 20px;
+}
+.irTienda{
+    display: flex;
+   justify-content: center;
+
+}
+.btnTienda{
+        display: block;
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;        
+        background-color:#a55d50 ;
+        color: white;
+        box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);        
+        align-items: center;
+}
+.btnTienda > a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+.btnTienda:hover{
+    background-color:#a44433;
+}
+.btnTienda:active{
+    background-color:rgb(182, 61, 50);
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+}
+/*inicio animacion btnTienda en la carga*/
+.shake-bottom{-webkit-animation:shake-bottom 2s cubic-bezier(.455,.03,.515,.955) both;animation:shake-bottom 2s cubic-bezier(.455,.03,.515,.955) both}
+@-webkit-keyframes shake-bottom{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}@keyframes shake-bottom{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}
+/*fin animacion boton*/
+.trabajoVideo{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    width:100%;
+    height: 469px;
+    justify-content: center; 
+}
+.videoInterior{
+    margin: 0;
+    padding: 10px;
+    width: 1000px;
+    height: 469px;
+}
+/* --------------- Detalles página -Contacto- maquetado GRID ---------------*/
+.contenidoContacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 20px 20px 20px;
+    padding: 0;
+    justify-content:space-evenly;
+    }
+    .contactoHijo1{
+        max-width: 600px;
+    }
+    .contactoHijo1 > p{
+        margin-top: 0;
+    }
+    .contactoHijo1 > h3{
+        text-align: center;
+    }
+    .contactoHijo2 {
+        display: flex;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 10px;
+        max-width: 600px;
+    }
+    .contactoHijo2> iframe{
+        margin: 30px;
+    }
+
+
+.contactoAsk{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    background-color:rgba(60, 29, 23, 0.148);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.52);
+    width: 600px;
+    padding: 20px ;
+    margin: 20px auto ;
+    /*margin: 20px auto;*/
+    border-radius: 10px;
+    border: 1px solid;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:    "titulo	        titulo	titulo"
+                            "nomApell	    check	check"
+                            "email	        mensaje	mensaje"
+                            "tel	        mensaje	mensaje"
+                            "asunto	        mensaje	mensaje"
+                            "...            btn1	    btn2";
+}
+.formulario h3:nth-child(1){
+    grid-area: titulo;
+}
+.formulario label:nth-child(2){
+    grid-area: nomApell;
+}
+.formulario label:nth-child(3){
+        grid-area: email;
+}
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+.formulario label:nth-child(5){
+    grid-area: asunto;
+}
+.formulario label:nth-child(6){
+    grid-area: mensaje;
+    justify-self: center;
+}
+.estiloTextArea{
+    width: 285px;
+    height:200px;
+}
+.formulario label:nth-child(7){
+    grid-area: check;
+}
+.formulario button:nth-child(8){
+    grid-area: btn1;
+}
+.formulario input:nth-child(9){
+    grid-area: btn2;
+}
+.formulario > label > input   {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: white 1.5px solid;
+    color: black;
+    font-weight: bold;
+}
+.formulario > label >textarea{
+    background-color: rgb(239, 239, 239);
+    color: black;
+    font-weight: bold;
+}
+.btnSend ,.btnReset{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        border:1px solid;
+        box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+}
+.btnReset{
+    background-color: red;
+}
+.btnSend:hover{
+    background-color:rgba(0, 128, 0, 0.664);
+}
+.btnReset:hover{
+    background-color: rgb(173, 4, 4);
+}
+.btnSend:active, .btnReset:active{
+    background-color: #717070;
+    box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+}
+
+/* --------------- Detalles página -Comprar- maquetado GRID---------------*/
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .tarjeta{
+        display: block;
+        border: 1px solid;
+        border-color: #717070b6;
+        border-radius: 10px;
+        /*width: 358px;
+        height: 450px;*/
+        width: 330px;
+        height: 420px;
+        margin: 15px;
+        align-content: center;
+    }
+    .tarjetaImagen{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .tarjeta img{
+        margin: 10px;
+        width: 265px;
+        height: 215px;
+    }
+    .tarjetaDescripcion{
+        display:block ;
+        margin: 10px;
+    }
+    .tarjeta h4{
+        margin: 5px;
+        padding: 3px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        color:#303030 ;
+    }
+    .tarjeta p{
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+        color:#717070 ;
+        margin: 5px;
+    }
+    .tarjetaPrecio{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .tarjetaPrecio span{
+        margin-top: 10px;
+        font-weight: bold;
+        box-shadow: 15px 17px 18px -15px rgba(0,0,0,0.75);
+    }
+    .btnComprar{
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color:#a55d50 ;
+        color: white;
+        text-decoration: none;
+        box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+    }
+    /*-transformaciones-*/
+    .tarjeta:hover{
+        background-color: #a55d5013;
+        transform: scale(1.05);
+        /*transform: scale(1.012);*/
+        transition: transform 0.5s;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.52);
+}
+
+/*cuando paso sobre el boton*/
+    .btnComprar:hover{
+       background-color:#a44433;
+       border-color: transparent;
+       
+    }
+    /*cuando hago click*/
+    .btnComprar:active{
+        background-color:rgb(182, 61, 50);
+        color: black;
+        border-color: black;
+        box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+     }
+/*Responsive de paginas con GRID y Flexbox*/
+ @media only screen and (max-width: 992px){
+    .footerArriba, .footerAbajo{
+        flex-direction: column;
+    }
+ }
+
+ @media only screen and (max-width: 850px){
+   /* -Productos- */
+    .trabajoVideo{
+        height: auto;
+    }
+     .videoInterior, .productoImagen{
+     width: 75%;
+     height: 75%;
+     }
+     .listaEspecial h3{
+        text-align: center;
+        font-size: 18px;
+     }
+ }
+
+
+
+ @media only screen and (max-width: 768px){
+    /* -Contacto- */
+    .contactoHijo2 > iframe{
+        margin: 30px;
+        width: 85%;
+        height: 85%;
+        }
+       .formulario{
+        max-width: 400px;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(8,auto);
+        grid-template-areas: "titulo titulo"
+                            "nomApell nomApell"
+                            "email email"
+                            "tel	tel"
+                            "asunto asunto"
+                            "check check"
+                            "mensaje mensaje"
+                            "btn1	    btn2";
+                        }
+    .formulario > h3{
+        text-align: center;             
+    }
+    .formulario > label{
+        align-self: center;
+    }
+    .estiloTextArea{
+        width: 200px;
+    }
+ }
+
+ @media only screen and (max-width: 576px) {
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .main > h2{
+        font-size: 25px;
+    }
+    .logoSinBSFooter{
+        margin: 16px;
+        height: auto;
+    }
+    .footerAbajo p{
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    /* -Productos- */
+    .productoTarjeta{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .videoInterior{
+     width: 50%;
+     height: 50%;
+     }
+     .listaEspecial{
+        font-size: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+     }
+     .listaEspecial h3{
+        font-size: 18px;
+     }
+     .listaEspecial > ul{
+        padding-left: 5px;
+     }
+    /* -Contacto- */
+    .contenidoContacto{
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .contenidoContacto  p{
+        margin: 10px;
+    }
+     .contactoHijo2 > iframe{
+        margin: 30px;
+        width: 70%;
+        align-self: center;
+        }
+     .formulario{
+        width: 270px;
+        padding: 5px ;   
+        gap: 5px;
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(9,auto);
+        grid-template-areas: "titulo"
+                             "nomApell"
+                             "email"
+                             "tel"
+                             "asunto"
+                             "check"
+                             "mensaje"
+                             "btn1"	
+                             "btn2";
+                            }
+    .formulario > h3{
+        font-size: 20px;
+    }
+ }
+
+ /*----------------Configuracion del Loading----------------*/
+ #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1ae8;
+  }
+  @keyframes pantallaGris{
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  #loader.loaded {
+   animation: pantallaGris 0.3s both;    
+  }
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color:white white transparent transparent;
+    box-sizing: border-box;
+    scale: 1.5;
+    animation: rotaHora 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent rgb(182, 61, 50)  rgb(182, 61, 50);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotaAnti 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: grey grey transparent transparent;
+    animation: rotaHora 1.5s linear infinite;
+  }
+  @keyframes rotaHora {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotaAnti {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  /*----------------Fin Configuracion del Loading----------------*/
