@@ -36,7 +36,7 @@ html , body{
 }
 .headerInicio{
     background-image: url(../img/maderas_apiladas.jpg);
-     height: 200px;
+    height: 200px;
 }
 .logoNavbar{
     width:130px;
@@ -77,11 +77,10 @@ html , body{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header	 header	    header	   header"
-                         "nav	     nav	    nav	       nav"
-                         "main	     main	    main	   main"
-                         "footer	 footer	    footer     footer"
-                         
-}
+                        "nav	     nav	    nav	       nav"
+                        "main	     main	    main	   main"
+                        "footer	 footer	    footer     footer"
+                        }
 /* --------------- Configuracion del Header  ---------------*/
 .header{   
     grid-area: header;
@@ -153,7 +152,7 @@ nav{
     max-width: 480px;  
 }
 .footerArriba  >.whatsappPresupuesto{
-  text-align: center;
+    text-align: center;
 }
 .footerAbajo p{
     margin: 0px;
@@ -178,7 +177,7 @@ nav{
     color: white;
     font-size: 65px; 
 }
- /* --------------- Detalles pagina -Productos- maquetado GRID ---------------*/
+/* --------------- Detalles pagina -Productos- maquetado GRID ---------------*/
 .productoTarjeta{
     display: flex;
     flex-wrap: wrap;
@@ -212,7 +211,7 @@ nav{
 }
 .irTienda{
     display: flex;
-   justify-content: center;
+    justify-content: center;
 
 }
 .btnTienda{
@@ -465,9 +464,8 @@ nav{
 
 /*cuando paso sobre el boton*/
     .btnComprar:hover{
-       background-color:#a44433;
-       border-color: transparent;
-       
+        background-color:#a44433;
+        border-color: transparent;
     }
     /*cuando hago click*/
     .btnComprar:active{
@@ -475,39 +473,39 @@ nav{
         color: black;
         border-color: black;
         box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
-     }
+    }
 /*Responsive de paginas con GRID y Flexbox*/
- @media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px){
     .footerArriba, .footerAbajo{
         flex-direction: column;
     }
- }
+}
 
- @media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px){
    /* -Productos- */
     .trabajoVideo{
         height: auto;
     }
-     .videoInterior, .productoImagen{
-     width: 75%;
-     height: 75%;
-     }
-     .listaEspecial h3{
+    .videoInterior, .productoImagen{
+    width: 75%;
+    height: 75%;
+    }
+    .listaEspecial h3{
         text-align: center;
         font-size: 18px;
-     }
- }
+    }
+}
 
 
 
- @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     /* -Contacto- */
     .contactoHijo2 > iframe{
         margin: 30px;
         width: 85%;
         height: 85%;
         }
-       .formulario{
+    .formulario{
         max-width: 400px;
         grid-template-columns: auto auto;
         grid-template-rows: repeat(8,auto);
@@ -529,9 +527,9 @@ nav{
     .estiloTextArea{
         width: 200px;
     }
- }
+}
 
- @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .header{
         display: flex;
         justify-content: center;
@@ -553,22 +551,22 @@ nav{
         margin-right: 5px;
     }
     .videoInterior{
-     width: 50%;
-     height: 50%;
-     }
-     .listaEspecial{
+    width: 50%;
+    height: 50%;
+    }
+    .listaEspecial{
         font-size: 16px;
         margin-left: 5px;
         margin-right: 5px;
         padding-left: 5px;
         padding-right: 5px;
-     }
-     .listaEspecial h3{
+    }
+    .listaEspecial h3{
         font-size: 18px;
-     }
-     .listaEspecial > ul{
+    }
+    .listaEspecial > ul{
         padding-left: 5px;
-     }
+    }
     /* -Contacto- */
     .contenidoContacto{
         margin-top: 10px;
@@ -577,34 +575,34 @@ nav{
     .contenidoContacto  p{
         margin: 10px;
     }
-     .contactoHijo2 > iframe{
+    .contactoHijo2 > iframe{
         margin: 30px;
         width: 70%;
         align-self: center;
         }
-     .formulario{
+    .formulario{
         width: 270px;
         padding: 5px ;   
         gap: 5px;
         grid-template-columns: 250px;
         grid-template-rows: repeat(9,auto);
         grid-template-areas: "titulo"
-                             "nomApell"
-                             "email"
-                             "tel"
-                             "asunto"
-                             "check"
-                             "mensaje"
-                             "btn1"	
-                             "btn2";
+                            "nomApell"
+                            "email"
+                            "tel"
+                            "asunto"
+                            "check"
+                            "mensaje"
+                            "btn1"	
+                            "btn2";
                             }
     .formulario > h3{
         font-size: 20px;
     }
- }
+}
 
- /*----------------Configuracion del Loading----------------*/
- #loader {
+/*----------------Configuracion del Loading----------------*/
+#loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -613,17 +611,17 @@ nav{
     width: 100%;
     height: 100%;
     background: #1a1a1ae8;
-  }
-  @keyframes pantallaGris{
+}
+@keyframes pantallaGris{
     100% {
-      visibility: hidden;
-      opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     }
-  }
-  #loader.loaded {
-   animation: pantallaGris 0.3s both;    
-  }
-  .loader {
+}
+#loader.loaded {
+    animation: pantallaGris 0.3s both;    
+    }
+.loader {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -634,9 +632,9 @@ nav{
     box-sizing: border-box;
     scale: 1.5;
     animation: rotaHora 1s linear infinite;
-  }
-  .loader::after,
-  .loader::before {
+    }
+.loader::after,
+.loader::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -653,27 +651,27 @@ nav{
     box-sizing: border-box;
     animation: rotaAnti 0.5s linear infinite;
     transform-origin: center center;
-  }
-  .loader::before {
+    }
+.loader::before {
     width: 32px;
     height: 32px;
     border-color: grey grey transparent transparent;
     animation: rotaHora 1.5s linear infinite;
-  }
-  @keyframes rotaHora {
+    }
+@keyframes rotaHora {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes rotaAnti {
+}
+@keyframes rotaAnti {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
-  }
-  /*----------------Fin Configuracion del Loading----------------*/
+}
+/*----------------Fin Configuracion del Loading----------------*/
