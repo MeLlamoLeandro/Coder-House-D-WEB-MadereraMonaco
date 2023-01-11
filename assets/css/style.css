@@ -537,7 +537,8 @@ nav {
   /* -Nosotros- */
   .nosotrosTarjeta {
     flex-direction: column;
-    padding: 24px 24px 0 24px;
+    margin: 24px 12px 0px 12px;
+    padding: 24px 12px 0px 12px;
     margin-bottom: 0; }
     .nosotrosTarjeta img {
       margin: 10px;
@@ -573,7 +574,7 @@ nav {
     justify-content: center; }
   .main h2 {
     font-size: 25px; }
-  .main p {
+  .main .p1 {
     font-size: 21px; }
   .logoSinBSFooter {
     margin: 16px;
