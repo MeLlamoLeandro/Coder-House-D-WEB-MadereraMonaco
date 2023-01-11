@@ -1,4 +1,3 @@
-/*Responsive de paginas con GRID y Flexbox*/
 @media only screen and (max-width: 992px){
     .footerArriba, .footerAbajo{
         flex-direction: column;
@@ -18,6 +17,24 @@
         text-align: center;
         font-size: 18px;
     }
+     /* -Nosotros- */
+     .nosotrosTarjeta{
+        flex-direction: column;
+        padding: 24px 24px 0 24px;
+        margin-bottom: 0;
+        img{
+            margin: 10px;
+            width: 75vw;
+        }
+        .nosotrosImgDer , .nosotrosImgIzq{
+            width: 100%;
+            h2, p{
+                text-align: center;
+                margin: 20px 20px 0 20px;
+                padding: 10px 10px 0 10px;
+            }
+        }
+     }
 }
 
 
@@ -58,8 +75,11 @@
         display: flex;
         justify-content: center;
     }
-    .main > h2{
+    .main  h2{
         font-size: 25px;
+    }
+    .main p{
+        font-size: 21px;
     }
     .logoSinBSFooter{
         margin: 16px;

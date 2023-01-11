@@ -11,14 +11,6 @@ html, body {
   font-family: Museo;
   src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
 
-/*---------------------------------MAQUETADO RESPONSIVE CON BOOTSTRAP---------------------------------*/
-/*("./index.html)
-/*("./pages/nosotros.html)
-*/
-.row, .container {
-  margin: 0;
-  padding: 0; }
-
 .font {
   font-family: "Museo",serif; }
 
@@ -40,26 +32,6 @@ html, body {
 .backFondo {
   background-color: #efefef; }
 
-.headerInicio {
-  background-image: url(../img/maderas_apiladas.jpg);
-  height: 200px; }
-
-.logoNavbar {
-  width: 130px;
-  height: 80px; }
-
-.logoFooter {
-  width: 89px; }
-
-.fa-square-facebook, .fa-square-instagram, .fa-square-twitter {
-  font-size: 50px; }
-
-.fa-whatsapp {
-  font-size: 65px; }
-
-.widthSlider {
-  width: 100vw; }
-
 .shadowImg {
   box-shadow: 6px 9px 15px -2px rgba(0, 0, 0, 0.54); }
 
@@ -79,9 +51,17 @@ html, body {
   width: max-content;
   height: max-content; }
 
+.headerInicio {
+  background-image: url(../img/maderas_apiladas.jpg);
+  height: 200px; }
+
 /*--------------- Configuracion del NAVEGADOR maquetado GRID ---------------*/
 nav {
   grid-area: nav; }
+
+.logoNavbar {
+  width: 130px;
+  height: 80px; }
 
 .main {
   grid-area: main; }
@@ -158,7 +138,28 @@ nav {
   color: white;
   font-size: 65px; }
 
-/* --------------- Detalles pagina -Productos- maquetado GRID ---------------*/
+.contInicio h1 {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.contInicio h2 {
+  margin: 0 0 8px;
+  padding: 0 12px;
+  font-size: 30px;
+  font-weight: bold; }
+
+.contInicio p {
+  /* margin: 0   0   16px;
+        padding: 0 12px;*/
+  font-size: 23px;
+  font-weight: normal; }
+
+.contInicio .p2 {
+  font-size: 20px; }
+
+.widthSlider {
+  width: 100vw; }
+
 .productoTarjeta {
   display: flex;
   flex-wrap: wrap;
@@ -287,6 +288,34 @@ nav {
   padding: 10px;
   width: 1000px;
   height: 469px; }
+
+.nosotrosTarjeta {
+  margin: 24px;
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .nosotrosTarjeta h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px; }
+  .nosotrosTarjeta p {
+    font-size: 24px; }
+  .nosotrosTarjeta img {
+    width: calc(100vw / 3); }
+  .nosotrosTarjeta .nosotrosImgIzq {
+    width: calc(100vw / 3); }
+    .nosotrosTarjeta .nosotrosImgIzq h2, .nosotrosTarjeta .nosotrosImgIzq p {
+      text-align: start;
+      margin-left: 0;
+      padding-left: 0; }
+  .nosotrosTarjeta .nosotrosImgDer {
+    width: calc(100vw / 3); }
+    .nosotrosTarjeta .nosotrosImgDer > h2, .nosotrosTarjeta .nosotrosImgDer p {
+      text-align: end;
+      margin-right: 0;
+      padding-right: 0; }
 
 /* --------------- Detalles página -Contacto- maquetado GRID ---------------*/
 .contenidoContacto {
@@ -491,7 +520,6 @@ nav {
   border-color: black;
   box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
-/*Responsive de paginas con GRID y Flexbox*/
 @media only screen and (max-width: 992px) {
   .footerArriba, .footerAbajo {
     flex-direction: column; } }
@@ -505,7 +533,21 @@ nav {
     height: 75%; }
   .listaEspecial h3 {
     text-align: center;
-    font-size: 18px; } }
+    font-size: 18px; }
+  /* -Nosotros- */
+  .nosotrosTarjeta {
+    flex-direction: column;
+    padding: 24px 24px 0 24px;
+    margin-bottom: 0; }
+    .nosotrosTarjeta img {
+      margin: 10px;
+      width: 75vw; }
+    .nosotrosTarjeta .nosotrosImgDer, .nosotrosTarjeta .nosotrosImgIzq {
+      width: 100%; }
+      .nosotrosTarjeta .nosotrosImgDer h2, .nosotrosTarjeta .nosotrosImgDer p, .nosotrosTarjeta .nosotrosImgIzq h2, .nosotrosTarjeta .nosotrosImgIzq p {
+        text-align: center;
+        margin: 20px 20px 0 20px;
+        padding: 10px 10px 0 10px; } }
 
 @media only screen and (max-width: 768px) {
   /* -Contacto- */
@@ -529,8 +571,10 @@ nav {
   .header {
     display: flex;
     justify-content: center; }
-  .main > h2 {
+  .main h2 {
     font-size: 25px; }
+  .main p {
+    font-size: 21px; }
   .logoSinBSFooter {
     margin: 16px;
     height: auto; }
