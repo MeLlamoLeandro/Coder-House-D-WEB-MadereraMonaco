@@ -1,7 +1,7 @@
 {
   "name": "preentrega3giffoni",
-  "version": "1.0.0",
-  "description": "",
+  "version": "3.0.0",
+  "description": "Tercera pre entrega de trabajo práctico curso Desarrollo Web de CoderHouse, modelo de un sitio web de una empresa de la industria maderera",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

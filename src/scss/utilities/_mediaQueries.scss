@@ -1,0 +1,126 @@
+/*Responsive de paginas con GRID y Flexbox*/
+@media only screen and (max-width: 992px){
+    .footerArriba, .footerAbajo{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 850px){
+   /* -Productos- */
+    .trabajoVideo{
+        height: auto;
+    }
+    .videoInterior, .productoImagen{
+    width: 75%;
+    height: 75%;
+    }
+    .listaEspecial h3{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    /* -Contacto- */
+    .contactoHijo2 > iframe{
+        margin: 30px;
+        width: 85%;
+        height: 85%;
+        }
+    .formulario{
+        max-width: 400px;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(8,auto);
+        grid-template-areas: "titulo titulo"
+                            "nomApell nomApell"
+                            "email email"
+                            "tel	tel"
+                            "asunto asunto"
+                            "check check"
+                            "mensaje mensaje"
+                            "btn1	    btn2";
+                        }
+    .formulario > h3{
+        text-align: center;             
+    }
+    .formulario > label{
+        align-self: center;
+    }
+    .estiloTextArea{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .main > h2{
+        font-size: 25px;
+    }
+    .logoSinBSFooter{
+        margin: 16px;
+        height: auto;
+    }
+    .footerAbajo p{
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    /* -Productos- */
+    .productoTarjeta{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .videoInterior{
+    width: 50%;
+    height: 50%;
+    }
+    .listaEspecial{
+        font-size: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .listaEspecial h3{
+        font-size: 18px;
+    }
+    .listaEspecial > ul{
+        padding-left: 5px;
+    }
+    /* -Contacto- */
+    .contenidoContacto{
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .contenidoContacto  p{
+        margin: 10px;
+    }
+    .contactoHijo2 > iframe{
+        margin: 30px;
+        width: 70%;
+        align-self: center;
+        }
+    .formulario{
+        width: 270px;
+        padding: 5px ;   
+        gap: 5px;
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(9,auto);
+        grid-template-areas: "titulo"
+                            "nomApell"
+                            "email"
+                            "tel"
+                            "asunto"
+                            "check"
+                            "mensaje"
+                            "btn1"	
+                            "btn2";
+                            }
+    .formulario > h3{
+        font-size: 20px;
+    }
+}

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden; }
+
+@font-face {
+  font-family: Museo;
+  src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
+
 /*---------------------------------MAQUETADO RESPONSIVE CON BOOTSTRAP---------------------------------*/
 /*("./index.html)
 /*("./pages/nosotros.html)
@@ -6,13 +18,6 @@
 .row, .container {
   margin: 0;
   padding: 0; }
-
-@font-face {
-  font-family: Museo;
-  src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
-
-html, body {
-  overflow-x: hidden; }
 
 .font {
   font-family: "Museo",serif; }
@@ -58,27 +63,12 @@ html, body {
 .shadowImg {
   box-shadow: 6px 9px 15px -2px rgba(0, 0, 0, 0.54); }
 
-/*---------------------------------MAQUETADO CON GRID Y FLEXBOX ---------------------------------*/
-/*("./pages/productos.html)
-/*("./pages/contacto.html)
-/*("./pages/comprar.html)
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: Museo;
-  src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
-
 .body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "header	 header	    header	   header" "nav	     nav	    nav	       nav" "main	     main	    main	   main" "footer	 footer	    footer     footer"; }
 
-/* --------------- Configuracion del Header  ---------------*/
 .header {
   grid-area: header;
   padding: 8px; }
@@ -93,40 +83,34 @@ html, body {
 nav {
   grid-area: nav; }
 
-/*--------------- Configuracion general maquetado GRID --------------- */
 .main {
   grid-area: main; }
-
-.main h1 {
-  margin: 10px;
-  padding: 10px;
-  font-size: 44px;
-  text-align: center;
-  font-weight: bold;
-  color: #b63d32; }
-
-/*parrafo del main*/
-.main p {
-  margin: 20px;
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold; }
-
-.main h2 {
-  margin: 10px;
-  padding: 10px;
-  font-size: 44px;
-  text-align: center;
-  font-weight: bold;
-  color: black; }
-
-.main h3 {
-  margin: 10px;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  color: black; }
+  .main h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    color: #b63d32; }
+  .main p {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold; }
+  .main h2 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    color: black; }
+  .main h3 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black; }
 
 /* --------------- configuracion del Footer sin Bootsrap --------------- */
 .footer {
@@ -430,7 +414,7 @@ nav {
   border-color: #717070b6;
   border-radius: 10px;
   /*width: 358px;
-        height: 450px;*/
+    height: 450px;*/
   width: 330px;
   height: 420px;
   margin: 15px;

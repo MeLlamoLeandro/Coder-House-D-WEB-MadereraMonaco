@@ -1,0 +1,91 @@
+/* --------------- Detalles página -Comprar- maquetado GRID---------------*/
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+.tarjeta{
+    display: block;
+    border: 1px solid;
+    border-color: #717070b6;
+    border-radius: 10px;
+    /*width: 358px;
+    height: 450px;*/
+    width: 330px;
+    height: 420px;
+    margin: 15px;
+    align-content: center;
+}
+.tarjetaImagen{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.tarjeta img{
+    margin: 10px;
+    width: 265px;
+    height: 215px;
+}
+.tarjetaDescripcion{
+    display:block ;
+    margin: 10px;
+}
+.tarjeta h4{
+    margin: 5px;
+    padding: 3px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color:#303030 ;
+}
+.tarjeta p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    color:#717070 ;
+    margin: 5px;
+}
+.tarjetaPrecio{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.tarjetaPrecio span{
+    margin-top: 10px;
+    font-weight: bold;
+    box-shadow: 15px 17px 18px -15px rgba(0,0,0,0.75);
+}
+.btnComprar{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color:#a55d50 ;
+    color: white;
+    text-decoration: none;
+    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+}
+/*-transformaciones-*/
+.tarjeta:hover{
+    background-color: #a55d5013;
+    transform: scale(1.05);
+    /*transform: scale(1.012);*/
+    transition: transform 0.5s;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.52);
+}
+
+/*cuando paso sobre el boton*/
+.btnComprar:hover{
+    background-color:#a44433;
+    border-color: transparent;
+}
+/*cuando hago click*/
+.btnComprar:active{
+    background-color:rgb(182, 61, 50);
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+}
