@@ -522,7 +522,9 @@ nav {
 
 @media only screen and (max-width: 992px) {
   .footerArriba, .footerAbajo {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .footerArriba p, .footerAbajo p {
+      padding: 0; } }
 
 @media only screen and (max-width: 850px) {
   /* -Productos- */
@@ -580,7 +582,6 @@ nav {
     margin: 16px;
     height: auto; }
   .footerAbajo p {
-    padding: 0;
     margin-bottom: 16px; }
   /* -Productos- */
   .productoTarjeta {

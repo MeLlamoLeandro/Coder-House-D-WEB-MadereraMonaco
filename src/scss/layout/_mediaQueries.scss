@@ -1,6 +1,9 @@
 @media only screen and (max-width: 992px){
     .footerArriba, .footerAbajo{
         flex-direction: column;
+        p{
+            padding: 0;
+        }
     }
 }
 
@@ -87,7 +90,6 @@
         height: auto;
     }
     .footerAbajo p{
-        padding: 0;
         margin-bottom: 16px;
     }
     /* -Productos- */
