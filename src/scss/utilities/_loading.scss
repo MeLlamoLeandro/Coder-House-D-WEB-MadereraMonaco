@@ -8,6 +8,7 @@
     width: 100%;
     height: 100%;
     background: #1a1a1ae8;
+    z-index: 1021;/*evito que se superponga con el navar de bootstrap que tiene 1020 por defecto*/
 }
 @keyframes pantallaGris{
     100% {
