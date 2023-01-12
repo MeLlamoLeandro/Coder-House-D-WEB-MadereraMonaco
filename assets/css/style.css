@@ -689,3 +689,8 @@ nav {
     transform: rotate(-360deg); } }
 
 /*----------------Fin Configuracion del Loading----------------*/
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020; }
