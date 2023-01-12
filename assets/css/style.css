@@ -5,9 +5,10 @@
   box-sizing: border-box; }
 
 /*
-html , body{
-    overflow-x: hidden;
-}*/
+html , body*/
+main {
+  overflow-x: hidden; }
+
 @font-face {
   font-family: Museo;
   src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
