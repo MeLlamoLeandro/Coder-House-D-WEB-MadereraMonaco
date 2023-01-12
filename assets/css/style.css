@@ -4,11 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*
-html , body*/
-main {
-  overflow-x: hidden; }
-
 @font-face {
   font-family: Museo;
   src: url(../fonts/MuseoModerno/static/MuseoModerno-Regular.ttf); }
@@ -37,25 +32,23 @@ main {
 .shadowImg {
   box-shadow: 6px 9px 15px -2px rgba(0, 0, 0, 0.54); }
 
-.body {
+body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "header	 header	    header	   header" "nav	     nav	    nav	       nav" "main	     main	    main	   main" "footer	 footer	    footer     footer"; }
 
-.header {
+header {
   grid-area: header;
-  padding: 8px; }
+  padding: 8px;
+  background-image: url(../img/maderas_apiladas.jpg);
+  height: 200px; }
 
 .logoHeader {
   margin: 20px 10px;
   padding: 10px;
   width: max-content;
   height: max-content; }
-
-.headerInicio {
-  background-image: url(../img/maderas_apiladas.jpg);
-  height: 200px; }
 
 /*--------------- Configuracion del NAVEGADOR maquetado GRID ---------------*/
 nav {
@@ -65,29 +58,30 @@ nav {
   width: 130px;
   height: 80px; }
 
-.main {
+main {
+  overflow-x: hidden;
   grid-area: main; }
-  .main h1 {
+  main h1 {
     margin: 10px;
     padding: 10px;
     font-size: 44px;
     text-align: center;
     font-weight: bold;
     color: #b63d32; }
-  .main p {
+  main p {
     margin: 20px;
     padding: 10px;
     font-size: 18px;
     text-align: center;
     font-weight: bold; }
-  .main h2 {
+  main h2 {
     margin: 10px;
     padding: 10px;
     font-size: 44px;
     text-align: center;
     font-weight: bold;
     color: black; }
-  .main h3 {
+  main h3 {
     margin: 10px;
     padding: 10px;
     font-size: 25px;
@@ -95,7 +89,7 @@ nav {
     color: black; }
 
 /* --------------- configuracion del Footer sin Bootsrap --------------- */
-.footer {
+footer {
   grid-area: footer; }
 
 .footerArriba, .footerAbajo {
@@ -571,12 +565,12 @@ nav {
     width: 200px; } }
 
 @media only screen and (max-width: 576px) {
-  .header {
+  header {
     display: flex;
     justify-content: center; }
-  .main h2 {
+  main h2 {
     font-size: 25px; }
-  .main .p1 {
+  main .p1 {
     font-size: 21px; }
   .logoSinBSFooter {
     margin: 16px;

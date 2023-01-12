@@ -1,14 +1,12 @@
-.header{   
+header{   
     grid-area: header;
     padding: 8px;
+    background-image: url(../img/maderas_apiladas.jpg);
+    height: 200px;
 }
 .logoHeader{
     margin: 20px 10px;
     padding: 10px;
     width: max-content;
     height: max-content;
-}
-.headerInicio{
-    background-image: url(../img/maderas_apiladas.jpg);
-    height: 200px;
 }

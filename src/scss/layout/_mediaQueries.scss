@@ -75,14 +75,14 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .header{
+    header{
         display: flex;
         justify-content: center;
     }
-    .main  h2{
+    main  h2{
         font-size: 25px;
     }
-    .main .p1{
+    main .p1{
         font-size: 21px;
     }
     .logoSinBSFooter{
