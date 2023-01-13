@@ -2,14 +2,14 @@ main{
     overflow-x: hidden;
     grid-area: main;
     h1{
-        @include formatoTexto(10px,10px,44px,center,bold,$color3)
+        @include formatoTexto($color:$color3);
     }
     h2{
-        @include formatoTexto(10px,10px,44px,center,bold,$color2)
+        @include formatoTexto($size:40px);
     }
     h3{
-        @include formatoTexto(10px,10px,25px,center,bold,$color2)
+        @include formatoTexto($size:25px)
     }
-    p{@include formatoTexto(20px,10px,18px,center,bold,$color2)
+    p{@include formatoTexto($marg:20px,$size:18px);
     }
 }
