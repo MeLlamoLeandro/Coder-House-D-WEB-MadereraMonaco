@@ -26,7 +26,7 @@
     display: inline-block;
     position: relative;
     border: 3px solid;
-    border-color:white white transparent transparent;
+    border-color:$color1 $color1 transparent transparent;
     box-sizing: border-box;
     scale: 1.5;
     animation: rotaHora 1s linear infinite;
@@ -42,7 +42,7 @@
     bottom: 0;
     margin: auto;
     border: 3px solid;
-    border-color: transparent transparent rgb(182, 61, 50)  rgb(182, 61, 50);
+    border-color: transparent transparent $color3 $color3;
     width: 40px;
     height: 40px;
     border-radius: 50%;

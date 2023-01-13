@@ -10,9 +10,9 @@
     font-weight: bold;
     border: none;
     border-radius: 5px;        
-    background-color:#a55d50 ;
+    background-color:$color6 ;
     color: $color1;
-    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);        
+    box-shadow:$sombra3;        
     align-items: center;
     > a{
         color:$color1;
@@ -20,7 +20,7 @@
         padding: 10px;
     }
     &:hover{
-        background-color:#a44433;
+        background-color:$color7;
     }
     &:active{
         background-color:$color3;
@@ -36,7 +36,7 @@
     color: $color1;
     border-radius: 5px;
     border:1px solid;
-    box-shadow: $sombra3
+    box-shadow: $sombra3;
 }
 .btnReset{
     background-color: red;
@@ -65,20 +65,20 @@
     border: 1px solid;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color:#a55d50 ;
-    color: white;
+    background-color:$color6 ;
+    color: $color1;
     text-decoration: none;
-    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+    box-shadow:$sombra3;
     /*cuando paso sobre el boton*/
     &:hover{
-        background-color:#a44433;
+        background-color:$color7;
         border-color: transparent;
     }
     /*cuando hago click*/
     &:active{
-        background-color:rgb(182, 61, 50);
+        background-color:$color3;
         color:$color2;
         border-color: $color2;
-        box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+        box-shadow: $sombra4;
     }
 }
