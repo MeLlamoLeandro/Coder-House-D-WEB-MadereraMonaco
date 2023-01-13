@@ -46,18 +46,18 @@
                                 grid-area: btn2;
                             }
                             > label {
+                                font-weight: bold;
                                 > input{
                                     background-color: transparent;
                                     border: 0;
                                     outline: none;
-                                    border-bottom: white 1.5px solid;
-                                    color: black;
-                                    font-weight: bold;
+                                    border-bottom: $color1 1.5px solid;
+                                    color: $color2;
+                                    
                                     }
                                 >textarea{
-                                    background-color: rgb(239, 239, 239);
-                                    color: black;
-                                    font-weight: bold;
+                                    background-color: $color5;
+                                    color: $color2;
                                     }
                                 }
                         }

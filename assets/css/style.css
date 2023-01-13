@@ -38,7 +38,7 @@
 
 .flexCenter {
   display: flex;
-  align-items: center; }
+  justify-content: center; }
 
 body {
   display: grid;
@@ -120,7 +120,7 @@ footer {
   text-align: center;
   font-weight: lighter; }
 
-.logoSinBSFooter {
+.logoFooter {
   margin: 0px;
   padding: 0px;
   width: 89px;
@@ -168,22 +168,23 @@ footer {
     grid-area: btn1; }
   .formulario input:nth-child(9) {
     grid-area: btn2; }
-  .formulario > label > input {
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    border-bottom: white 1.5px solid;
-    color: black;
+  .formulario > label {
     font-weight: bold; }
-  .formulario > label > textarea {
-    background-color: #efefef;
-    color: black;
-    font-weight: bold; }
+    .formulario > label > input {
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      border-bottom: #ffff 1.5px solid;
+      color: black; }
+    .formulario > label > textarea {
+      background-color: #efefef;
+      color: black; }
 
 .estiloTextArea {
   width: 285px;
   height: 200px; }
 
+/*-Productos-*/
 .btnTienda {
   display: block;
   width: 200px;
@@ -196,11 +197,11 @@ footer {
   border: none;
   border-radius: 5px;
   background-color: #a55d50;
-  color: white;
+  color: #ffff;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
   align-items: center; }
   .btnTienda > a {
-    color: white;
+    color: #ffff;
     text-decoration: none;
     padding: 10px; }
   .btnTienda:hover {
@@ -211,10 +212,11 @@ footer {
     border-color: black;
     box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
+/*-Contacto-*/
 .btnSend, .btnReset {
   padding: 10px;
   background-color: green;
-  color: white;
+  color: #ffff;
   border-radius: 5px;
   border: 1px solid;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856); }
@@ -233,6 +235,28 @@ footer {
 .btnSend:active {
   background-color: #717070;
   box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+
+/*-Comprar-*/
+.btnComprar {
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #a55d50;
+  color: white;
+  text-decoration: none;
+  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+  /*cuando paso sobre el boton*/
+  /*cuando hago click*/ }
+  .btnComprar:hover {
+    background-color: #a44433;
+    border-color: transparent; }
+  .btnComprar:active {
+    background-color: #b63d32;
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 /* --------------- Detalles página -Inicio ---------------*/
 .contInicio h1 {
@@ -257,12 +281,10 @@ footer {
 
 /* --------------- Detalles página -Productos ---------------*/
 .productoTarjeta {
-  display: flex;
   flex-wrap: wrap;
   margin: 40px;
   align-items: center;
-  align-content: center;
-  justify-content: center; }
+  align-content: center; }
   .productoTarjeta h3 {
     text-align: left;
     font-weight: bold; }
@@ -283,10 +305,6 @@ footer {
     .listaEspecial ul li {
       list-style-type: none;
       margin: 5px 20px; }
-
-.irTienda {
-  display: flex;
-  justify-content: center; }
 
 /*inicio animacion btnTienda en la carga*/
 .shake-bottom {
@@ -339,9 +357,7 @@ footer {
 
 /*fin animacion boton*/
 .trabajoVideo {
-  display: flex;
-  height: 469px;
-  justify-content: center; }
+  height: 469px; }
 
 .videoInterior {
   margin: 0;
@@ -395,18 +411,12 @@ footer {
     text-align: center; }
 
 .contactoHijo2 {
-  display: flex;
-  justify-content: center;
   border: 1px solid;
   border-radius: 10px;
   max-width: 600px;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
   .contactoHijo2 > iframe {
     margin: 30px; }
-
-.contactoAsk {
-  display: flex;
-  justify-content: center; }
 
 /* --------------- Detalles página -Comprar ---------------*/
 .tarjetas {
@@ -449,9 +459,7 @@ footer {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
 
 .tarjetaImagen {
-  display: flex;
-  align-content: center;
-  justify-content: center; }
+  align-content: center; }
 
 .tarjetaDescripcion {
   display: block;
@@ -466,27 +474,6 @@ footer {
     margin-top: 10px;
     font-weight: bold;
     box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.75); }
-
-.btnComprar {
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #a55d50;
-  color: white;
-  text-decoration: none;
-  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
-  /*cuando paso sobre el boton*/
-  /*cuando hago click*/ }
-  .btnComprar:hover {
-    background-color: #a44433;
-    border-color: transparent; }
-  .btnComprar:active {
-    background-color: #b63d32;
-    color: black;
-    border-color: black;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 @media only screen and (max-width: 992px) {
   .footerArriba, .footerAbajo {
@@ -545,7 +532,7 @@ footer {
     font-size: 25px; }
   main .p1 {
     font-size: 21px; }
-  .logoSinBSFooter {
+  .logoFooter {
     margin: 16px;
     height: auto; }
   .footerAbajo p {
