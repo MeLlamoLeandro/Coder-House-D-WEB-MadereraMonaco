@@ -30,31 +30,26 @@
     }
 }
 /*-Contacto-*/
-.btnSend ,.btnReset{
+.btnSend{
     padding: 10px;
     background-color: green;
     color: $color1;
     border-radius: 5px;
     border:1px solid;
     box-shadow: $sombra3;
-}
-.btnReset{
-    background-color: red;
-    &:hover{
-        background-color: rgb(173, 4, 4);
-    }
-    &:active{
-        background-color: #717070;
-        box-shadow: $sombra4;
-    }
-}
-.btnSend{
     &:hover{
         background-color:rgb(7, 112, 7);
     }
     &:active{
         background-color: #717070;
         box-shadow: $sombra4;
+    }
+}
+.btnReset{
+    @extend .btnSend;
+    background-color: red;
+    &:hover{
+        background-color: rgb(173, 4, 4);
     }
 }
 

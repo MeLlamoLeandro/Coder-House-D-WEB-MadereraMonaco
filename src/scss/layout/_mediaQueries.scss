@@ -130,10 +130,10 @@
         align-self: center;
         }
     .formulario{
-        width: 270px;
-        padding: 5px ;   
+        width: 95%;
+        padding: 15px ;   
         gap: 5px;
-        grid-template-columns: 250px;
+        grid-template-columns: auto;
         grid-template-rows: repeat(9,auto);
         grid-template-areas: "titulo"
                             "nomApell"
@@ -148,5 +148,4 @@
                                 font-size: 20px;
                             }
     }
-    
 }

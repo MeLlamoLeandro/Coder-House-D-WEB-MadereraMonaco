@@ -106,8 +106,6 @@ footer {
   margin: 4px;
   padding: 24px;
   font-size: 20px;
-  text-align: center;
-  font-weight: bold;
   max-width: 480px; }
 
 .footerArriba > .whatsappPresupuesto {
@@ -220,21 +218,16 @@ footer {
   border-radius: 5px;
   border: 1px solid;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856); }
+  .btnSend:hover, .btnReset:hover {
+    background-color: #077007; }
+  .btnSend:active, .btnReset:active {
+    background-color: #717070;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 .btnReset {
   background-color: red; }
   .btnReset:hover {
     background-color: #ad0404; }
-  .btnReset:active {
-    background-color: #717070;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
-
-.btnSend:hover {
-  background-color: #077007; }
-
-.btnSend:active {
-  background-color: #717070;
-  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 /*-Comprar-*/
 .btnComprar {
@@ -560,10 +553,10 @@ footer {
     width: 70%;
     align-self: center; }
   .formulario {
-    width: 270px;
-    padding: 5px;
+    width: 95%;
+    padding: 15px;
     gap: 5px;
-    grid-template-columns: 250px;
+    grid-template-columns: auto;
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "titulo" "nomApell" "email" "tel" "asunto" "check" "mensaje" "btn1"	 "btn2"; }
     .formulario > h3 {
