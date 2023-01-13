@@ -136,6 +136,7 @@ footer {
   color: white;
   font-size: 65px; }
 
+/* --------------- Detalles página -Inicio ---------------*/
 .contInicio h1 {
   margin-bottom: 0;
   padding-bottom: 0; }
@@ -156,6 +157,7 @@ footer {
 .widthSlider {
   width: 100vw; }
 
+/* --------------- Detalles página -Productos ---------------*/
 .productoTarjeta {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +285,7 @@ footer {
   width: 1000px;
   height: 469px; }
 
+/* --------------- Detalles página -Nosotros ---------------*/
 .nosotrosTarjeta {
   margin: 24px;
   padding: 48px;
@@ -311,7 +314,7 @@ footer {
       margin-right: 0;
       padding-right: 0; }
 
-/* --------------- Detalles página -Contacto- maquetado GRID ---------------*/
+/* --------------- Detalles página -Contacto ---------------*/
 .contenidoContacto {
   display: flex;
   flex-wrap: wrap;
@@ -349,7 +352,6 @@ footer {
   width: 600px;
   padding: 20px;
   margin: 20px auto;
-  /*margin: 20px auto;*/
   border-radius: 10px;
   border: 1px solid;
   display: grid;
@@ -424,7 +426,7 @@ footer {
   background-color: #717070;
   box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
-/* --------------- Detalles página -Comprar- maquetado GRID---------------*/
+/* --------------- Detalles página -Comprar ---------------*/
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
@@ -436,8 +438,6 @@ footer {
   border: 1px solid;
   border-color: #717070b6;
   border-radius: 10px;
-  /*width: 358px;
-    height: 450px;*/
   width: 330px;
   height: 420px;
   margin: 15px;
@@ -498,7 +498,6 @@ footer {
 .tarjeta:hover {
   background-color: #a55d5013;
   transform: scale(1.05);
-  /*transform: scale(1.012);*/
   transition: transform 0.5s;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
 
