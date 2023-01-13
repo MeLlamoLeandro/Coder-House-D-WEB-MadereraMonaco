@@ -61,13 +61,13 @@
                             "check check"
                             "mensaje mensaje"
                             "btn1	    btn2";
+                            > h3{
+                                text-align: center;             
+                            }
+                            > label{
+                                align-self: center;
+                            }
                         }
-    .formulario > h3{
-        text-align: center;             
-    }
-    .formulario > label{
-        align-self: center;
-    }
     .estiloTextArea{
         width: 200px;
     }
@@ -78,12 +78,15 @@
         display: flex;
         justify-content: center;
     }
-    main  h2{
-        font-size: 25px;
+    main{
+        h2{
+            font-size: 25px;
+        }
+        .p1{
+            font-size: 21px;
+        }
     }
-    main .p1{
-        font-size: 21px;
-    }
+ 
     .logoSinBSFooter{
         margin: 16px;
         height: auto;
@@ -96,8 +99,7 @@
         margin-left: 5px;
         margin-right: 5px;
     }
-    .videoInterior{
-   
+    .videoInterior{   
     height: 50%;
     }
     .listaEspecial{
@@ -106,20 +108,21 @@
         margin-right: 5px;
         padding-left: 5px;
         padding-right: 5px;
+        h3{
+            font-size: 18px;
+        }
+        > ul{
+            padding-left: 5px;
+        }
     }
-    .listaEspecial h3{
-        font-size: 18px;
-    }
-    .listaEspecial > ul{
-        padding-left: 5px;
-    }
+    
     /* -Contacto- */
     .contenidoContacto{
         margin-top: 10px;
         padding-top: 10px;
-    }
-    .contenidoContacto  p{
-        margin: 10px;
+        p{
+            margin: 10px;
+        }
     }
     .contactoHijo2 > iframe{
         margin: 30px;
@@ -141,8 +144,9 @@
                             "mensaje"
                             "btn1"	
                             "btn2";
+                            > h3{
+                                font-size: 20px;
                             }
-    .formulario > h3{
-        font-size: 20px;
     }
+    
 }

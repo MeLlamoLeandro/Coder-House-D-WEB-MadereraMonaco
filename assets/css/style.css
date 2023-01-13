@@ -136,6 +136,104 @@ footer {
   color: white;
   font-size: 65px; }
 
+.formulario {
+  background-color: rgba(60, 29, 23, 0.148);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52);
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "titulo	        titulo	titulo" "nomApell	    check	check" "email	        mensaje	mensaje" "tel	        mensaje	mensaje" "asunto	        mensaje	mensaje" "...            btn1	    btn2"; }
+  .formulario h3:nth-child(1) {
+    grid-area: titulo; }
+  .formulario label:nth-child(2) {
+    grid-area: nomApell; }
+  .formulario label:nth-child(3) {
+    grid-area: email; }
+  .formulario label:nth-child(4) {
+    grid-area: tel; }
+  .formulario label:nth-child(5) {
+    grid-area: asunto; }
+  .formulario label:nth-child(6) {
+    grid-area: mensaje;
+    justify-self: center; }
+  .formulario label:nth-child(7) {
+    grid-area: check; }
+  .formulario button:nth-child(8) {
+    grid-area: btn1; }
+  .formulario input:nth-child(9) {
+    grid-area: btn2; }
+  .formulario > label > input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: white 1.5px solid;
+    color: black;
+    font-weight: bold; }
+  .formulario > label > textarea {
+    background-color: #efefef;
+    color: black;
+    font-weight: bold; }
+
+.estiloTextArea {
+  width: 285px;
+  height: 200px; }
+
+.btnTienda {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #a55d50;
+  color: white;
+  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+  align-items: center; }
+  .btnTienda > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; }
+  .btnTienda:hover {
+    background-color: #a44433; }
+  .btnTienda:active {
+    background-color: #b63d32;
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+
+.btnSend, .btnReset {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856); }
+
+.btnReset {
+  background-color: red; }
+  .btnReset:hover {
+    background-color: #ad0404; }
+  .btnReset:active {
+    background-color: #717070;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+
+.btnSend:hover {
+  background-color: #077007; }
+
+.btnSend:active {
+  background-color: #717070;
+  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+
 /* --------------- Detalles página -Inicio ---------------*/
 .contInicio h1 {
   margin-bottom: 0;
@@ -189,33 +287,6 @@ footer {
 .irTienda {
   display: flex;
   justify-content: center; }
-
-.btnTienda {
-  display: block;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  text-align: center;
-  padding: 10px 10px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  background-color: #a55d50;
-  color: white;
-  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
-  align-items: center; }
-  .btnTienda > a {
-    color: white;
-    text-decoration: none;
-    padding: 10px; }
-  .btnTienda:hover {
-    background-color: #a44433; }
-  .btnTienda:active {
-    background-color: #b63d32;
-    color: black;
-    border-color: black;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 /*inicio animacion btnTienda en la carga*/
 .shake-bottom {
@@ -336,77 +407,6 @@ footer {
 .contactoAsk {
   display: flex;
   justify-content: center; }
-
-.formulario {
-  background-color: rgba(60, 29, 23, 0.148);
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52);
-  width: 600px;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 10px;
-  border: 1px solid;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: "titulo	        titulo	titulo" "nomApell	    check	check" "email	        mensaje	mensaje" "tel	        mensaje	mensaje" "asunto	        mensaje	mensaje" "...            btn1	    btn2"; }
-  .formulario h3:nth-child(1) {
-    grid-area: titulo; }
-  .formulario label:nth-child(2) {
-    grid-area: nomApell; }
-  .formulario label:nth-child(3) {
-    grid-area: email; }
-  .formulario label:nth-child(4) {
-    grid-area: tel; }
-  .formulario label:nth-child(5) {
-    grid-area: asunto; }
-  .formulario label:nth-child(6) {
-    grid-area: mensaje;
-    justify-self: center; }
-  .formulario label:nth-child(7) {
-    grid-area: check; }
-  .formulario button:nth-child(8) {
-    grid-area: btn1; }
-  .formulario input:nth-child(9) {
-    grid-area: btn2; }
-  .formulario > label > input {
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    border-bottom: white 1.5px solid;
-    color: black;
-    font-weight: bold; }
-  .formulario > label > textarea {
-    background-color: #efefef;
-    color: black;
-    font-weight: bold; }
-
-.estiloTextArea {
-  width: 285px;
-  height: 200px; }
-
-.btnSend, .btnReset {
-  padding: 10px;
-  background-color: green;
-  color: white;
-  border-radius: 5px;
-  border: 1px solid;
-  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856); }
-
-.btnReset {
-  background-color: red; }
-  .btnReset:hover {
-    background-color: #ad0404; }
-  .btnReset:active {
-    background-color: #717070;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
-
-.btnSend:hover {
-  background-color: #077007; }
-
-.btnSend:active {
-  background-color: #717070;
-  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 /* --------------- Detalles página -Comprar ---------------*/
 .tarjetas {
@@ -530,10 +530,10 @@ footer {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: "titulo titulo" "nomApell nomApell" "email email" "tel	tel" "asunto asunto" "check check" "mensaje mensaje" "btn1	    btn2"; }
-  .formulario > h3 {
-    text-align: center; }
-  .formulario > label {
-    align-self: center; }
+    .formulario > h3 {
+      text-align: center; }
+    .formulario > label {
+      align-self: center; }
   .estiloTextArea {
     width: 200px; } }
 
@@ -562,16 +562,16 @@ footer {
     margin-right: 5px;
     padding-left: 5px;
     padding-right: 5px; }
-  .listaEspecial h3 {
-    font-size: 18px; }
-  .listaEspecial > ul {
-    padding-left: 5px; }
+    .listaEspecial h3 {
+      font-size: 18px; }
+    .listaEspecial > ul {
+      padding-left: 5px; }
   /* -Contacto- */
   .contenidoContacto {
     margin-top: 10px;
     padding-top: 10px; }
-  .contenidoContacto p {
-    margin: 10px; }
+    .contenidoContacto p {
+      margin: 10px; }
   .contactoHijo2 > iframe {
     margin: 30px;
     width: 70%;
@@ -583,8 +583,8 @@ footer {
     grid-template-columns: 250px;
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "titulo" "nomApell" "email" "tel" "asunto" "check" "mensaje" "btn1"	 "btn2"; }
-  .formulario > h3 {
-    font-size: 20px; } }
+    .formulario > h3 {
+      font-size: 20px; } }
 
 /*----------------Configuracion del Loading----------------*/
 #loader {

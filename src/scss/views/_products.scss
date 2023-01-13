@@ -37,36 +37,6 @@
     justify-content: center;
 
 }
-.btnTienda{
-        display: block;
-        width: 200px;
-        height: auto;
-        margin-top: 10px;
-        text-align: center;
-        padding: 10px 10px;
-        font-size: 18px;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;        
-        background-color:#a55d50 ;
-        color: white;
-        box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);        
-        align-items: center;
-        > a{
-            color:white;
-            text-decoration: none;
-            padding: 10px;
-        }
-        &:hover{
-            background-color:#a44433;
-        }
-        &:active{
-            background-color:$color3;
-            color:$color2;
-            border-color: $color2;
-            box-shadow: $sombra4;
-        }
-}
 
 
 /*inicio animacion btnTienda en la carga*/

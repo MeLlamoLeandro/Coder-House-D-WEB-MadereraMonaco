@@ -1,0 +1,58 @@
+.btnTienda{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;        
+    background-color:#a55d50 ;
+    color: white;
+    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);        
+    align-items: center;
+    > a{
+        color:white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    &:hover{
+        background-color:#a44433;
+    }
+    &:active{
+        background-color:$color3;
+        color:$color2;
+        border-color: $color2;
+        box-shadow: $sombra4;
+    }
+}
+
+.btnSend ,.btnReset{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border:1px solid;
+    box-shadow: $sombra3
+}
+.btnReset{
+background-color: red;
+&:hover{
+    background-color: rgb(173, 4, 4);
+}
+&:active{
+    background-color: #717070;
+    box-shadow: $sombra4;
+}
+}
+.btnSend{
+&:hover{
+    background-color:rgb(7, 112, 7);
+}
+&:active{
+    background-color: #717070;
+    box-shadow: $sombra4;
+}
+}
