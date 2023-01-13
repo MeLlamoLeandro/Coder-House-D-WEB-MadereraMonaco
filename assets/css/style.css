@@ -165,10 +165,9 @@ footer {
   align-items: center;
   align-content: center;
   justify-content: center; }
-
-.productoTarjeta h3 {
-  text-align: left;
-  height: 60px; }
+  .productoTarjeta h3 {
+    text-align: left;
+    font-weight: bold; }
 
 .productoImagen {
   display: inline-block;
@@ -181,13 +180,11 @@ footer {
   padding: 25px;
   border: 5px;
   font-size: 22px; }
-
-.listaEspecial ul {
-  margin: 10px; }
-
-.listaEspecial ul li {
-  list-style-type: none;
-  margin: 5px 20px; }
+  .listaEspecial ul {
+    margin: 10px; }
+    .listaEspecial ul li {
+      list-style-type: none;
+      margin: 5px 20px; }
 
 .irTienda {
   display: flex;
@@ -208,20 +205,17 @@ footer {
   color: white;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
   align-items: center; }
-
-.btnTienda > a {
-  color: white;
-  text-decoration: none;
-  padding: 10px; }
-
-.btnTienda:hover {
-  background-color: #a44433; }
-
-.btnTienda:active {
-  background-color: #b63d32;
-  color: black;
-  border-color: black;
-  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+  .btnTienda > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; }
+  .btnTienda:hover {
+    background-color: #a44433; }
+  .btnTienda:active {
+    background-color: #b63d32;
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 /*inicio animacion btnTienda en la carga*/
 .shake-bottom {
@@ -275,15 +269,14 @@ footer {
 /*fin animacion boton*/
 .trabajoVideo {
   display: flex;
-  width: 100%;
   height: 469px;
   justify-content: center; }
 
 .videoInterior {
   margin: 0;
-  padding: 10px;
-  width: 1000px;
-  height: 469px; }
+  padding: 10px 0;
+  width: 95vw;
+  object-fit: fill; }
 
 /* --------------- Detalles página -Nosotros ---------------*/
 .nosotrosTarjeta {
@@ -325,22 +318,20 @@ footer {
 
 .contactoHijo1 {
   max-width: 600px; }
-
-.contactoHijo1 > p {
-  margin-top: 0; }
-
-.contactoHijo1 > h3 {
-  text-align: center; }
+  .contactoHijo1 > p {
+    margin-top: 0; }
+  .contactoHijo1 > h3 {
+    text-align: center; }
 
 .contactoHijo2 {
   display: flex;
   justify-content: center;
   border: 1px solid;
   border-radius: 10px;
-  max-width: 600px; }
-
-.contactoHijo2 > iframe {
-  margin: 30px; }
+  max-width: 600px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
+  .contactoHijo2 > iframe {
+    margin: 30px; }
 
 .contactoAsk {
   display: flex;
@@ -359,51 +350,40 @@ footer {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas: "titulo	        titulo	titulo" "nomApell	    check	check" "email	        mensaje	mensaje" "tel	        mensaje	mensaje" "asunto	        mensaje	mensaje" "...            btn1	    btn2"; }
-
-.formulario h3:nth-child(1) {
-  grid-area: titulo; }
-
-.formulario label:nth-child(2) {
-  grid-area: nomApell; }
-
-.formulario label:nth-child(3) {
-  grid-area: email; }
-
-.formulario label:nth-child(4) {
-  grid-area: tel; }
-
-.formulario label:nth-child(5) {
-  grid-area: asunto; }
-
-.formulario label:nth-child(6) {
-  grid-area: mensaje;
-  justify-self: center; }
+  .formulario h3:nth-child(1) {
+    grid-area: titulo; }
+  .formulario label:nth-child(2) {
+    grid-area: nomApell; }
+  .formulario label:nth-child(3) {
+    grid-area: email; }
+  .formulario label:nth-child(4) {
+    grid-area: tel; }
+  .formulario label:nth-child(5) {
+    grid-area: asunto; }
+  .formulario label:nth-child(6) {
+    grid-area: mensaje;
+    justify-self: center; }
+  .formulario label:nth-child(7) {
+    grid-area: check; }
+  .formulario button:nth-child(8) {
+    grid-area: btn1; }
+  .formulario input:nth-child(9) {
+    grid-area: btn2; }
+  .formulario > label > input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: white 1.5px solid;
+    color: black;
+    font-weight: bold; }
+  .formulario > label > textarea {
+    background-color: #efefef;
+    color: black;
+    font-weight: bold; }
 
 .estiloTextArea {
   width: 285px;
   height: 200px; }
-
-.formulario label:nth-child(7) {
-  grid-area: check; }
-
-.formulario button:nth-child(8) {
-  grid-area: btn1; }
-
-.formulario input:nth-child(9) {
-  grid-area: btn2; }
-
-.formulario > label > input {
-  background-color: transparent;
-  border: 0;
-  outline: none;
-  border-bottom: white 1.5px solid;
-  color: black;
-  font-weight: bold; }
-
-.formulario > label > textarea {
-  background-color: #efefef;
-  color: black;
-  font-weight: bold; }
 
 .btnSend, .btnReset {
   padding: 10px;
@@ -415,14 +395,16 @@ footer {
 
 .btnReset {
   background-color: red; }
+  .btnReset:hover {
+    background-color: #ad0404; }
+  .btnReset:active {
+    background-color: #717070;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 .btnSend:hover {
-  background-color: rgba(0, 128, 0, 0.664); }
+  background-color: #077007; }
 
-.btnReset:hover {
-  background-color: #ad0404; }
-
-.btnSend:active, .btnReset:active {
+.btnSend:active {
   background-color: #717070;
   box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
@@ -441,47 +423,49 @@ footer {
   width: 330px;
   height: 420px;
   margin: 15px;
-  align-content: center; }
+  align-content: center;
+  /*-transformaciones-*/ }
+  .tarjeta img {
+    margin: 10px;
+    width: 265px;
+    height: 215px; }
+  .tarjeta h4 {
+    margin: 5px;
+    padding: 3px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #303030; }
+  .tarjeta p {
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    color: #717070;
+    margin: 5px; }
+  .tarjeta:hover {
+    background-color: #a55d5013;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
 
 .tarjetaImagen {
   display: flex;
   align-content: center;
   justify-content: center; }
 
-.tarjeta img {
-  margin: 10px;
-  width: 265px;
-  height: 215px; }
-
 .tarjetaDescripcion {
   display: block;
   margin: 10px; }
-
-.tarjeta h4 {
-  margin: 5px;
-  padding: 3px;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bold;
-  color: #303030; }
-
-.tarjeta p {
-  font-size: 13px;
-  text-align: center;
-  font-weight: bold;
-  color: #717070;
-  margin: 5px; }
 
 .tarjetaPrecio {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 10px; }
-
-.tarjetaPrecio span {
-  margin-top: 10px;
-  font-weight: bold;
-  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.75); }
+  .tarjetaPrecio span {
+    margin-top: 10px;
+    font-weight: bold;
+    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.75); }
 
 .btnComprar {
   font-size: 16px;
@@ -492,26 +476,17 @@ footer {
   background-color: #a55d50;
   color: white;
   text-decoration: none;
-  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856); }
-
-/*-transformaciones-*/
-.tarjeta:hover {
-  background-color: #a55d5013;
-  transform: scale(1.05);
-  transition: transform 0.5s;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.52); }
-
-/*cuando paso sobre el boton*/
-.btnComprar:hover {
-  background-color: #a44433;
-  border-color: transparent; }
-
-/*cuando hago click*/
-.btnComprar:active {
-  background-color: #b63d32;
-  color: black;
-  border-color: black;
-  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+  box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+  /*cuando paso sobre el boton*/
+  /*cuando hago click*/ }
+  .btnComprar:hover {
+    background-color: #a44433;
+    border-color: transparent; }
+  .btnComprar:active {
+    background-color: #b63d32;
+    color: black;
+    border-color: black;
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
 
 @media only screen and (max-width: 992px) {
   .footerArriba, .footerAbajo {
@@ -523,12 +498,11 @@ footer {
   /* -Productos- */
   .trabajoVideo {
     height: auto; }
-  .videoInterior, .productoImagen {
+  .productoImagen {
     width: 75%;
     height: 75%; }
   .listaEspecial h3 {
-    text-align: center;
-    font-size: 18px; }
+    text-align: center; }
   /* -Nosotros- */
   .nosotrosTarjeta {
     flex-direction: column;
@@ -581,7 +555,6 @@ footer {
     margin-left: 5px;
     margin-right: 5px; }
   .videoInterior {
-    width: 50%;
     height: 50%; }
   .listaEspecial {
     font-size: 16px;

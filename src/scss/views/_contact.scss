@@ -9,24 +9,25 @@
     }
     .contactoHijo1{
         max-width: 600px;
+        > p{
+            margin-top: 0;
+        }
+        > h3{
+            text-align: center;
+        }
     }
-    .contactoHijo1 > p{
-        margin-top: 0;
-    }
-    .contactoHijo1 > h3{
-        text-align: center;
-    }
+    
     .contactoHijo2 {
         display: flex;
         justify-content: center;
         border: 1px solid;
         border-radius: 10px;
         max-width: 600px;
+        box-shadow: $sombra2;
+        > iframe{
+            margin: 30px;
+        }
     }
-    .contactoHijo2> iframe{
-        margin: 30px;
-    }
-
 
 .contactoAsk{
     display: flex;
@@ -34,7 +35,7 @@
 }
 .formulario{
     background-color:rgba(60, 29, 23, 0.148);
-    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.52);
+    box-shadow: $sombra2;
     width: 600px;
     padding: 20px ;
     margin: 20px auto ;
@@ -50,70 +51,81 @@
                             "tel	        mensaje	mensaje"
                             "asunto	        mensaje	mensaje"
                             "...            btn1	    btn2";
-}
-.formulario h3:nth-child(1){
-    grid-area: titulo;
-}
-.formulario label:nth-child(2){
-    grid-area: nomApell;
-}
-.formulario label:nth-child(3){
-        grid-area: email;
-}
-.formulario label:nth-child(4){
-    grid-area: tel;
-}
-.formulario label:nth-child(5){
-    grid-area: asunto;
-}
-.formulario label:nth-child(6){
-    grid-area: mensaje;
-    justify-self: center;
-}
+
+                            h3:nth-child(1){
+                                grid-area: titulo;
+                            }
+                            label:nth-child(2){
+                                grid-area: nomApell;
+                            }
+                            label:nth-child(3){
+                                grid-area: email;
+                            }
+                            label:nth-child(4){
+                                grid-area: tel;
+                            }
+                            label:nth-child(5){
+                                grid-area: asunto;
+                            }
+                            label:nth-child(6){
+                                grid-area: mensaje;
+                                justify-self: center;
+                            }
+                            label:nth-child(7){
+                                grid-area: check;
+                            }
+                            button:nth-child(8){
+                                grid-area: btn1;
+                            }
+                            input:nth-child(9){
+                                grid-area: btn2;
+                            }
+                            > label {
+                                > input{
+                                    background-color: transparent;
+                                    border: 0;
+                                    outline: none;
+                                    border-bottom: white 1.5px solid;
+                                    color: black;
+                                    font-weight: bold;
+                                    }
+                                >textarea{
+                                    background-color: rgb(239, 239, 239);
+                                    color: black;
+                                    font-weight: bold;
+                                    }
+                                }
+                        }
+
 .estiloTextArea{
     width: 285px;
     height:200px;
 }
-.formulario label:nth-child(7){
-    grid-area: check;
-}
-.formulario button:nth-child(8){
-    grid-area: btn1;
-}
-.formulario input:nth-child(9){
-    grid-area: btn2;
-}
-.formulario > label > input   {
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    border-bottom: white 1.5px solid;
-    color: black;
-    font-weight: bold;
-}
-.formulario > label >textarea{
-    background-color: rgb(239, 239, 239);
-    color: black;
-    font-weight: bold;
-}
+
 .btnSend ,.btnReset{
         padding: 10px;
         background-color: green;
         color: white;
         border-radius: 5px;
         border:1px solid;
-        box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
+        box-shadow: $sombra3
 }
 .btnReset{
     background-color: red;
+    &:hover{
+        background-color: rgb(173, 4, 4);
+    }
+    &:active{
+        background-color: #717070;
+        box-shadow: $sombra4;
+    }
 }
-.btnSend:hover{
-    background-color:rgba(0, 128, 0, 0.664);
-}
-.btnReset:hover{
-    background-color: rgb(173, 4, 4);
-}
-.btnSend:active, .btnReset:active{
-    background-color: #717070;
-    box-shadow: 10px 10px 19px -12px rgba(0,0,0,0.75)
+.btnSend{
+    &:hover{
+        background-color:rgb(7, 112, 7);
+    }
+    &:active{
+        background-color: #717070;
+        box-shadow: $sombra4;
+    }
 }

@@ -10,23 +10,28 @@ footer{
     width: 100%;
     min-height: 108px;
 }
-.footerArriba p{
-    margin: 4px ;
-    padding: 24px;   
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold; 
-    max-width: 480px;  
+.footerArriba {
+    p{
+        margin: 4px ;
+        padding: 24px;   
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold; 
+        max-width: 480px;  
+    }
+    >.whatsappPresupuesto{
+        text-align: center;
+    }
 }
-.footerArriba  >.whatsappPresupuesto{
-    text-align: center;
-}
-.footerAbajo p{
-    margin: 0px;
-    padding: 40px;
-    font-size: 16px;
-    text-align: center;
-    font-weight: lighter; 
+
+.footerAbajo {
+    p{
+        margin: 0px;
+        padding: 40px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: lighter; 
+    }
 }
 .logoSinBSFooter{
     margin: 0px;
