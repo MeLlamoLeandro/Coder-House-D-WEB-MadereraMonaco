@@ -12,7 +12,7 @@
   font-family: "Museo",serif; }
 
 .colorWhite {
-  color: white; }
+  color: #ffff; }
 
 .colorBlack {
   color: black; }
@@ -68,12 +68,6 @@ main {
     text-align: center;
     font-weight: bold;
     color: #b63d32; }
-  main p {
-    margin: 20px;
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold; }
   main h2 {
     margin: 10px;
     padding: 10px;
@@ -85,6 +79,14 @@ main {
     margin: 10px;
     padding: 10px;
     font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: black; }
+  main p {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
     font-weight: bold;
     color: black; }
 

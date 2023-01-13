@@ -1,38 +1,15 @@
 main{
     overflow-x: hidden;
     grid-area: main;
-
     h1{
-        margin: 10px;
-        padding: 10px;
-        font-size: 44px;
-        text-align: center;
-        font-weight: bold;
-        color: rgb(182, 61, 50);
+        @include formatoTexto(10px,10px,44px,center,bold,$color3)
     }
-
-    p{
-        margin: 20px ;
-        padding: 10px;
-        font-size: 18px;
-        text-align: center;
-        font-weight: bold
-    }
-
     h2{
-        margin: 10px;
-        padding: 10px;
-        font-size: 44px;
-        text-align: center;
-        font-weight: bold;
-        color:black ;
+        @include formatoTexto(10px,10px,44px,center,bold,$color2)
     }
-
     h3{
-        margin: 10px;
-        padding: 10px;
-        font-size: 25px;
-        font-weight: bold;
-        color:black ;
+        @include formatoTexto(10px,10px,25px,center,bold,$color2)
+    }
+    p{@include formatoTexto(20px,10px,18px,center,bold,$color2)
     }
 }

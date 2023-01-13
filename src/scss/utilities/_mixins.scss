@@ -1,0 +1,8 @@
+@mixin formatoTexto($marg,$pad,$size,$align,$weight,$color){
+    margin: $marg;
+    padding: $pad;
+    font-size: $size;
+    text-align: $align;
+    font-weight: $weight;
+    color: $color;
+}

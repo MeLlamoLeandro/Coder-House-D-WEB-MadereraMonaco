@@ -1,0 +1,30 @@
+
+$color1:#ffff;
+$color2:black;
+$color3: rgb(182, 61, 50);
+$color4: rgb(60,29,23);
+$color5: rgb(239, 239, 239);
+$sombra1:6px 9px 15px -2px rgba(0,0,0,0.54);
+
+
+.colorWhite{
+    color: $color1;
+}
+.colorBlack{
+    color: $color2;
+}
+.colorPrimario{
+    color: $color3;
+}
+.backPrimario{
+    background-color: $color3;
+}
+.backSecundario{
+    background-color:$color4;
+}
+.backFondo{
+    background-color: $color5;   
+}
+.shadowImg{
+    box-shadow: $sombra1;
+}
