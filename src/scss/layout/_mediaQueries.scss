@@ -19,8 +19,8 @@
     .listaEspecial h3{
         text-align: center;
     }
-     /* -Nosotros- */
-     .nosotrosTarjeta{
+    /* -Nosotros- */
+    .nosotrosTarjeta{
         flex-direction: column;
         margin: 24px 12px 0px 12px;
         padding: 24px 12px 0px 12px;
@@ -37,7 +37,7 @@
                 padding: 10px 10px 0 10px;
             }
         }
-     }
+    }
 }
 
 
@@ -69,7 +69,7 @@
                             }
                         }
     .estiloTextArea{
-        width: 200px;
+        max-width: 350px;
     }
 }
 
@@ -147,5 +147,13 @@
                             > h3{
                                 font-size: 20px;
                             }
+    }
+    .estiloTextArea{
+        max-width: 300px;
+    }
+}
+@media (max-width: 340px) {
+    .estiloTextArea{
+        max-width: 230px;
     }
 }

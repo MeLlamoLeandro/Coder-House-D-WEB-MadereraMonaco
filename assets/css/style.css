@@ -179,7 +179,7 @@ footer {
       color: black; }
 
 .estiloTextArea {
-  width: 285px;
+  width: 300px;
   height: 200px; }
 
 /*-Productos-*/
@@ -511,7 +511,7 @@ footer {
     .formulario > label {
       align-self: center; }
   .estiloTextArea {
-    width: 200px; } }
+    max-width: 350px; } }
 
 @media only screen and (max-width: 576px) {
   header {
@@ -560,7 +560,13 @@ footer {
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "titulo" "nomApell" "email" "tel" "asunto" "check" "mensaje" "btn1"	 "btn2"; }
     .formulario > h3 {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .estiloTextArea {
+    max-width: 300px; } }
+
+@media (max-width: 340px) {
+  .estiloTextArea {
+    max-width: 230px; } }
 
 /*----------------Configuracion del Loading----------------*/
 #loader {
