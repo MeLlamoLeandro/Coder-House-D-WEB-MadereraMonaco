@@ -27,6 +27,9 @@
         color:$color2;
         border-color: $color2;
         box-shadow: $sombra4;
+        //efecto que de hundimiento a los botones
+        position: relative;
+        top: 1px;
     }
 }
 /*-Contacto-*/
@@ -43,6 +46,8 @@
     &:active{
         background-color: #717070;
         box-shadow: $sombra4;
+        position: relative;
+        top: 1px;
     }
 }
 .btnReset{
@@ -50,6 +55,9 @@
     background-color: red;
     &:hover{
         background-color: rgb(173, 4, 4);
+    }
+    &:active{
+        background-color: #717070;
     }
 }
 
@@ -67,13 +75,14 @@
     /*cuando paso sobre el boton*/
     &:hover{
         background-color:$color7;
-        border-color: transparent;
     }
     /*cuando hago click*/
     &:active{
         background-color:$color3;
-        color:$color2;
-        border-color: $color2;
+        //color:$color2;
+        //border-color: $color2;
         box-shadow: $sombra4;
+        position: relative;
+        top: 1px;
     }
 }

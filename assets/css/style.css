@@ -208,7 +208,9 @@ footer {
     background-color: #b63d32;
     color: black;
     border-color: black;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 1px; }
 
 /*-Contacto-*/
 .btnSend, .btnReset {
@@ -222,12 +224,16 @@ footer {
     background-color: #077007; }
   .btnSend:active, .btnReset:active {
     background-color: #717070;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 1px; }
 
 .btnReset {
   background-color: red; }
   .btnReset:hover {
     background-color: #ad0404; }
+  .btnReset:active {
+    background-color: #717070; }
 
 /*-Comprar-*/
 .btnComprar {
@@ -243,13 +249,12 @@ footer {
   /*cuando paso sobre el boton*/
   /*cuando hago click*/ }
   .btnComprar:hover {
-    background-color: #a44433;
-    border-color: transparent; }
+    background-color: #a44433; }
   .btnComprar:active {
     background-color: #b63d32;
-    color: black;
-    border-color: black;
-    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75); }
+    box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 1px; }
 
 /* --------------- Detalles página -Inicio ---------------*/
 .contInicio h1 {
