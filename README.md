@@ -25,7 +25,7 @@ https://mellamoleandro.github.io/PFGiffoni/
 
 * **Leandro Giffoni** - *Diseño wireframe, desarrollo web, multimedia y SEO* - [MeLlamoLeandro](https://github.com/MeLlamoLeandro)
 
-## Expresiones de Gratitud 🎁
+## Agradecimientos 🎁
 
 * Muchas gracias a [maxirosanda](https://github.com/maxirosanda), excelente profesor, por todo lo brindado tanto en conocimiento y apoyo 📢
 * Muchas gracias a Lucas Barros tutor del proyecto que acompaño con correcciones y sugerencias a lo largo de las entregas parciales.
