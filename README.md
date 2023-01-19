@@ -29,4 +29,4 @@ https://mellamoleandro.github.io/PFGiffoni/
 
 * Muchas gracias a [maxirosanda](https://github.com/maxirosanda), excelente profesor, por todo lo brindado tanto en conocimiento y apoyo 📢
 * Muchas gracias a Lucas Barros tutor del proyecto que acompaño con correcciones y sugerencias a lo largo de las entregas parciales.
-* Muchas gracias al que inventó el Ctrol + Z  🤓.
+* Muchas gracias al que inventó el "git checkout" 🤓.
