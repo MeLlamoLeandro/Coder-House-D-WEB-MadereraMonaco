@@ -469,6 +469,13 @@ footer {
     font-weight: bold;
     box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.75); }
 
+.thanks {
+  margin: 30px 0; }
+  .thanks h2 {
+    color: #b63d32; }
+  .thanks p {
+    text-align: center; }
+
 @media only screen and (max-width: 992px) {
   .footerArriba, .footerAbajo {
     flex-direction: column; }
