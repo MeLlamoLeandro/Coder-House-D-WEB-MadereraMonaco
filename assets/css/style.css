@@ -417,6 +417,14 @@ footer {
     margin: 30px; }
 
 /* --------------- Detalles página -Comprar ---------------*/
+.controls {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+  gap: 10px; }
+  .controls label {
+    font-weight: bold; }
+
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
