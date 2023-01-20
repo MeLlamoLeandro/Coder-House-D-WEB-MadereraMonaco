@@ -453,7 +453,13 @@ footer {
   .tarjeta p {
     font-size: 13px;
     color: #717070;
-    margin: 5px; }
+    margin: 5px;
+    padding: 5px; }
+  .tarjeta span {
+    color: green;
+    font-weight: bold;
+    align-items: center;
+    font-size: x-large; }
   .tarjeta:hover {
     background-color: #a55d5013;
     transform: scale(1.05);
@@ -470,12 +476,7 @@ footer {
 .tarjetaPrecio {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px; }
-  .tarjetaPrecio span {
-    margin-top: 10px;
-    font-weight: bold;
-    box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.75); }
+  justify-content: space-evenly; }
 
 .thanks {
   margin: 30px 0; }
