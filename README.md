@@ -1,6 +1,6 @@
 # Maderera Mónaco -Comercial Industrial
 <div id="header" align="center">  
-  <img src="https://github.com/MeLlamoLeandro/PFGiffoni/blob/master/assets/img/logo1bco.jpg?raw=true" width="100"/>
+  <img src="https://github.com/MeLlamoLeandro/MadereraMonaco/blob/master/assets/img/logo1bco.jpg?raw=true" width="100"/>
 </div>
 
 ## Descripción:
@@ -9,7 +9,7 @@ Proyecto final del curso Desarrollo Web de CoderHouse, modelo de un sitio web de
 
 ## Despliegue 📦
 
-https://mellamoleandro.github.io/PFGiffoni/
+https://mellamoleandro.github.io/MadereraMonaco/
 
 ## Construido con 🛠️
 

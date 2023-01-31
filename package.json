@@ -1,24 +1,24 @@
 {
-  "name": "preentrega3giffoni",
-  "version": "3.0.0",
-  "description": "Tercera pre entrega de trabajo práctico curso Desarrollo Web de CoderHouse, modelo de un sitio web de una empresa de la industria maderera",
+  "name": "madereramonaco",
+  "version": "4.0.0",
+  "description": "Proyecto final del curso Desarrollo Web de CoderHouse, modelo de un sitio web de una empresa de la industria maderera",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss src/scss/main.scss assets/css/style.css",
+    "build-css": "node-sass --include-path scss src/scss/main.scss assets/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MeLlamoLeandro/PreEntrega3Giffoni.git"
+    "url": "git+https://github.com/MeLlamoLeandro/MadereraMonaco.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MeLlamoLeandro/PreEntrega3Giffoni/issues"
+    "url": "https://github.com/MeLlamoLeandro/MadereraMonaco/issues"
   },
-  "homepage": "https://github.com/MeLlamoLeandro/PreEntrega3Giffoni#readme",
+  "homepage": "https://github.com/MeLlamoLeandro/MadereraMonaco#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
