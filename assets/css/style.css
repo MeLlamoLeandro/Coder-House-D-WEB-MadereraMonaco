@@ -63,8 +63,9 @@ nav {
   grid-area: nav; }
 
 .logoNavbar {
-  width: 130px;
-  height: 80px; }
+  width: 89px;
+  height: 54px;
+  object-fit: cover; }
 
 main {
   overflow-x: hidden;
