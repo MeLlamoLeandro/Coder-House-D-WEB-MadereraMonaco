@@ -31,6 +31,12 @@ footer{
         text-align: center;
         font-weight: lighter; 
     }
+    .copyright{
+        a{
+            color: #ffffff;
+            text-decoration: none ;
+        }
+    }
 }
 .logoFooter{
     margin: 0px;
@@ -40,11 +46,11 @@ footer{
 }
 .fa-square-facebook ,.fa-square-instagram , .fa-square-twitter{
     margin: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 50px; 
 }
 .fa-whatsapp{
     margin: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 65px; 
 }
