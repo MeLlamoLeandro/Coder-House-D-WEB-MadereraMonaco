@@ -18,13 +18,13 @@
   color: black; }
 
 .colorPrimario {
-  color: #b63d32; }
+  color: #8B299F; }
 
 .backPrimario {
   background-color: #b63d32; }
 
 .backSecundario {
-  background-color: #3c1d17; }
+  background-color: #A72E60; }
 
 .backFondo {
   background-color: #efefef; }
@@ -73,7 +73,7 @@ main {
     margin: 10px;
     padding: 10px;
     font-size: 44px;
-    color: #b63d32; }
+    color: #8B299F; }
   main h2 {
     margin: 10px;
     padding: 10px;
@@ -194,7 +194,7 @@ footer {
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  background-color: #a55d50;
+  background-color: #B3A300;
   color: white;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
   align-items: center; }
@@ -203,9 +203,9 @@ footer {
     text-decoration: none;
     padding: 10px; }
   .btnTienda:hover {
-    background-color: #a44433; }
+    background-color: #8B299F; }
   .btnTienda:active {
-    background-color: #b63d32;
+    background-color: #A72E60;
     color: black;
     border-color: black;
     box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
@@ -242,16 +242,16 @@ footer {
   border: 1px solid;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #a55d50;
+  background-color: #B3A300;
   color: white;
   text-decoration: none;
   box-shadow: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
   /*cuando paso sobre el boton*/
   /*cuando hago click*/ }
   .btnComprar:hover {
-    background-color: #a44433; }
+    background-color: #8B299F; }
   .btnComprar:active {
-    background-color: #b63d32;
+    background-color: #A72E60;
     box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
     position: relative;
     top: 1px; }
@@ -456,7 +456,7 @@ footer {
     margin: 5px;
     padding: 5px; }
   .tarjeta span {
-    color: green;
+    color: #A72E60;
     font-weight: bold;
     align-items: center;
     font-size: x-large; }
@@ -481,7 +481,7 @@ footer {
 .thanks {
   margin: 30px 0; }
   .thanks h2 {
-    color: #b63d32; }
+    color: #8B299F; }
   .thanks p {
     text-align: center; }
 
@@ -644,7 +644,7 @@ footer {
 .loader::before {
   width: 32px;
   height: 32px;
-  border-color: grey grey transparent transparent;
+  border-color: #A72E60 #A72E60 transparent transparent;
   animation: rotaHora 1.5s linear infinite; }
 
 @keyframes rotaHora {

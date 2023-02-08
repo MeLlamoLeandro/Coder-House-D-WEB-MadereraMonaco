@@ -23,7 +23,7 @@
         background-color:$color7;
     }
     &:active{
-        background-color:$color3;
+        background-color:$color4;
         color:$color2;
         border-color: $color2;
         box-shadow: $sombra4;
@@ -54,7 +54,7 @@
     @extend .btnSend;
     background-color: red;
     &:hover{
-        background-color: rgb(173, 4, 4);
+        background-color: #ad0404;
     }
     &:active{
         background-color: #717070;
@@ -78,9 +78,7 @@
     }
     /*cuando hago click*/
     &:active{
-        background-color:$color3;
-        //color:$color2;
-        //border-color: $color2;
+        background-color:$color4;
         box-shadow: $sombra4;
         position: relative;
         top: 1px;

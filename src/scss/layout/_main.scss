@@ -2,7 +2,7 @@ main{
     overflow-x: hidden;
     grid-area: main;
     h1{
-        @include formatoTexto($color:$color3);
+        @include formatoTexto($color:$color7);
     }
     h2{
         @include formatoTexto($size:40px);

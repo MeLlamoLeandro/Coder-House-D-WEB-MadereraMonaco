@@ -1,11 +1,11 @@
 //Variables
 $color1:white;
 $color2:black;
-$color3: rgb(182, 61, 50);
-$color4: rgb(60,29,23);
-$color5: rgb(239, 239, 239);
-$color6:#a55d50;
-$color7:#a44433;
+$color3: #b63d32;
+$color4: #A72E60;
+$color5: #efefef;
+$color6:#B3A300;
+$color7:#8B299F;
 $sombra1: 6px 9px 15px -2px rgba(0,0,0,0.54);
 $sombra2: 0px 0px 20px 5px rgba(0,0,0,0.52);
 $sombra3: 15px 17px 18px -15px rgba(0, 0, 0, 0.856);
@@ -20,7 +20,7 @@ $sombra5: 15px 17px 18px -15px rgba(0,0,0,0.75);
     color: $color2;
 }
 .colorPrimario{
-    color: $color3;
+    color: $color7;
 }
 .backPrimario{
     background-color: $color3;
