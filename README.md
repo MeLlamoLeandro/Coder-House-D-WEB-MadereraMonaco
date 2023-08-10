@@ -31,3 +31,7 @@ https://mellamoleandro.github.io/Coder-House-D-WEB-MadereraMonaco/
 * Muchas gracias a [maxirosanda](https://github.com/maxirosanda), excelente profesor, por todo lo brindado tanto en conocimiento y apoyo 📢
 * Muchas gracias a Lucas Barros tutor del proyecto que acompaño con correcciones y sugerencias a lo largo de las entregas parciales.
 * Muchas gracias al que inventó el "git checkout" 🤓.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
